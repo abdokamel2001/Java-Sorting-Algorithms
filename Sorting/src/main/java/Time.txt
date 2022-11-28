@@ -1,0 +1,53 @@
+
+int[] a = generate(100000); // 10 ^ 5
+
+measure("Bubble Sort",    mode, () -> Bubble.sort(a),   a, num); 14.4 s
+measure("Select Sort",    mode, () -> Select.sort(a),   a, num); 2985 ms
+measure("Insert Sort",    mode, () -> Insert.sort(a),   a, num); 1011 ms
+measure("Merge Sort",     mode, () -> Merge.sort(a),    a, num); 18 ms
+measure("Quick Sort",     mode, () -> Quick.sort(a),    a, num); 10 ms
+measure("Flash Sort",     mode, () -> Flash.sort(a),    a, num); 5876 μs
+measure("Heap Sort",      mode, () -> Flash.sort(a),    a, num); 3735 μs
+measure("Count sort",     mode, () -> Count.sort(a),    a, num); 4445 μs
+measure("Radix sort",     mode, () -> Radix.sort(a),    a, num); 8109 μs
+measure("Radix256 sort",  mode, () -> Radix256.sort(a), a, num); 2913 μs
+
+-----------------------------------------------------------------------------
+
+int[] a = generate(1000000); // 10 ^ 6
+
+measure("Select Sort",    mode, () -> Select.sort(a),   a, num); 445 s
+measure("Insert Sort",    mode, () -> Insert.sort(a),   a, num); 96 s
+measure("Merge Sort",     mode, () -> Merge.sort(a),    a, num); 190 ms
+measure("Quick Sort",     mode, () -> Quick.sort(a),    a, num); 115 ms
+measure("Flash Sort",     mode, () -> Flash.sort(a),    a, num); 51 ms
+measure("Heap Sort",      mode, () -> Flash.sort(a),    a, num); 50 ms
+measure("Count sort",     mode, () -> Count.sort(a),    a, num); 52 ms
+measure("Radix sort",     mode, () -> Radix.sort(a),    a, num); 77 ms
+measure("Radix256 sort",  mode, () -> Radix256.sort(a), a, num); 28 ms
+
+-----------------------------------------------------------------------------
+
+int[] a = generate(10000000); // 10 ^ 7
+
+measure("Merge Sort",     mode, () -> Merge.sort(a),    a, num); 2016 ms
+measure("Quick Sort",     mode, () -> Quick.sort(a),    a, num); 1331 ms
+measure("Flash Sort",     mode, () -> Flash.sort(a),    a, num); 1140 ms
+measure("Heap Sort",      mode, () -> Flash.sort(a),    a, num); 1113 ms
+measure("Count sort",     mode, () -> Count.sort(a),    a, num); 1285 ms
+measure("Radix sort",     mode, () -> Radix.sort(a),    a, num); 790 ms
+measure("Radix256 sort",  mode, () -> Radix256.sort(a), a, num); 330 ms
+
+-----------------------------------------------------------------------------
+
+int[] a = generate(100000000); // 10 ^ 8
+
+measure("Merge Sort",     mode, () -> Merge.sort(a),    a, num); 22.4 s
+measure("Quick Sort",     mode, () -> Quick.sort(a),    a, num); 14.8 s
+measure("Flash Sort",     mode, () -> Flash.sort(a),    a, num); 20.4 s
+measure("Heap Sort",      mode, () -> Flash.sort(a),    a, num); 20.3 s
+measure("Count sort",     mode, () -> Count.sort(a),    a, num); 17.5 s
+measure("Radix sort",     mode, () -> Radix.sort(a),    a, num); 9 s
+measure("Radix256 sort",  mode, () -> Radix256.sort(a), a, num); 3.4 s
+
+-----------------------------------------------------------------------------
