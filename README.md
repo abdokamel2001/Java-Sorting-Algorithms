@@ -2,18 +2,18 @@
 
 This repository contains Java implementations of various sorting algorithms. The algorithms are all implemented as static methods in their respective class files, and can be called by calling [sort type].sort(int[] array).<br>
 <br>
-The available sorting algorithms are:<br>
+The available sorting algorithms are:
 <br>
-    * Bubble Sort<br>
-    * Count Sort<br>
-    * Flash Sort<br>
-    * Heap Sort<br>
-    * Insertion Sort<br>
-    * Merge Sort<br>
-    * Quick Sort<br>
-    * Radix Sort<br>
-    * Radix Sort (base 256)<br>
-    * Selection Sort<br>
++ Bubble Sort<br>
++ Count Sort<br>
++ Flash Sort<br>
++ Heap Sort<br>
++ Insertion Sort<br>
++ Merge Sort<br>
++ Quick Sort<br>
++ Radix Sort<br>
++ Radix Sort (base 256)<br>
++ Selection Sort<br>
 <br>
 The Main class allows you to select the sorting algorithm and the number of elements in the array to be sorted. You can also choose the type of shuffling for the array (sorted, reversed, shuffled) and see a sample of the array before and after sorting to verify that the sort was successful. The Main class also displays the time taken for the sorting algorithm to run, and allows you to repeat the sort multiple times to measure the average time taken.<br>
 <br>
