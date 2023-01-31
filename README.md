@@ -1,4 +1,4 @@
-# Sorting Algorithms
+# Sorting Algorithms Java
 
 This repository contains Java implementations of various sorting algorithms. The algorithms are all implemented as static methods in their respective class files, and can be called by typing [sort type].sort(int[] array).<br>
 <br>
